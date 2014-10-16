@@ -9,6 +9,13 @@ branches:
     - master
 after_script:
 - grunt build
+- cd dist
+- git init
+- git config user.name "Travis-CI"
+- git config user.email "rsiwady29@gmail.com"
+- git add .
+- git commit -m "Deployed to Github Pages"
+- git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages > /dev/null 2>&1
 env:
   global:
     - secure: "y57RTsxiIACxQ0Luc4mZT1XlnoUyNPfKsBmacHLw9a7KpmqBUCK3f+VTiLyl2ZdJnV5lTFrMtM1JTwwTprVIlAGrdHI2vuDd76DUTZoJRE6yHHl/IX1XVVo0NO4lrPkzq2DClgk0Q4I3hraLGzmp+ArD+4s2wQfFd2+ajGr+jOY="
