@@ -9,3 +9,6 @@ bower_components
 
 #Idea
 .idea/
+
+#Project
+temp/
