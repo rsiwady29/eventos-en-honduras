@@ -9,5 +9,6 @@ branches:
     - master
 after_script:
 - grunt build
-- ls
-- pwd
+env:
+  global:
+    - secure: "y57RTsxiIACxQ0Luc4mZT1XlnoUyNPfKsBmacHLw9a7KpmqBUCK3f+VTiLyl2ZdJnV5lTFrMtM1JTwwTprVIlAGrdHI2vuDd76DUTZoJRE6yHHl/IX1XVVo0NO4lrPkzq2DClgk0Q4I3hraLGzmp+ArD+4s2wQfFd2+ajGr+jOY="
