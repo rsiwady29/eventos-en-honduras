@@ -13,8 +13,12 @@
             <div class="event-tile">
                 <a ng-href="event.SitioWeb">
                     <div class="inner">
-                        <div class="image"></div>
-                        <div class="event-logo"></div>
+                        <div class="image">
+                            <img ng-src="{{event.Photo1._url}}">
+                        </div>
+                        <div class="event-logo">
+                            <img ng-src="{{event.Logo._url}}">
+                        </div>
                         <h4> {{event.Nombre}} </h4>
                         <p>{{event.Fecha | date: 'EEEE, MMMM d, y'}}</p>
                         <p>{{event.Ciudad}}</p>

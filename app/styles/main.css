@@ -24,6 +24,10 @@ body {
     min-height: 360px;
 }
 
+.event-tile a{
+    text-decoration: none;
+}
+
 .image{
     -webkit-border-top-left-radius: 3px;
     -webkit-border-top-right-radius: 3px;
@@ -35,7 +39,7 @@ body {
     overflow: hidden;
 }
 
-.logo{
+.event-logo{
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
@@ -50,6 +54,12 @@ body {
     position: absolute;
     text-align: center;
     width: 60px;
+}
+
+.event-logo img{
+    width: 52px;
+    height: 52px;
+    margin-top: 4px;
 }
 
 .inner{
@@ -68,4 +78,8 @@ body {
     padding-bottom: 20px;
     text-align: center;
     position: relative;
+}
+
+.inner h4{
+    margin-top: 20px;
 }
