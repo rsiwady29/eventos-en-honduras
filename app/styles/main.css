@@ -1,4 +1,13 @@
 body {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 70px;
+    background: #f7f9f9;
+}
+
+.title{
+    text-align: center;
+    font-size: 3em;
+}
+
+.navbar{
+    background: #f0f3f4;
 }
