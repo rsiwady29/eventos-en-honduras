@@ -1,13 +1,5 @@
 'use strict';
 
-/**
- * @ngdoc overview
- * @name eventosEnHondurasApp
- * @description
- * # eventosEnHondurasApp
- *
- * Main module of the application.
- */
 angular
   .module('eventosEnHondurasApp', [
     'ngAnimate',
@@ -21,9 +13,12 @@ angular
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        controller: 'MainController'
       })
       .otherwise({
         redirectTo: '/'
       });
-  });
+  })
+  .run(function(ParseService){
+        ParseService.init();
+    });
