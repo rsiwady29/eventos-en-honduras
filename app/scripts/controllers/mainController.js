@@ -3,12 +3,18 @@
 angular.module('eventosEnHondurasApp')
   .controller('MainController',['$scope','EventService', function ($scope, EventService) {
 
+        $scope.events = [];
+
         var success = function(results) {
-            console.log(results);
+            for(var i=0; i< results.length; i++){
+                $scope.events.push(results[i].attributes);
+            }
+            console.log($scope.events);
+            $scope.$apply();
         };
 
         var error = function(error) {
-            console.log(error);
+
         };
 
         var init = function(){

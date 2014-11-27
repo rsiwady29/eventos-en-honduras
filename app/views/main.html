@@ -1,0 +1,26 @@
+<div class="container feature">
+    <div class="row feature main-row">
+        <div class="col-md-12 text-center"><h1>Eventos Tecnologicos en Honduras</h1></div>
+        <div class="col-md-8 col-md-offset-2 text-center">
+            <p class="lead animated fadeInDown">
+                Aqui encontraras una lista de eventos a realizarse alrededor de Honduras
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div ng-repeat="event in events" class="col-lg-3 col-md-4 col-sm-6">
+            <div class="event-tile">
+                <a ng-href="event.SitioWeb">
+                    <div class="inner">
+                        <div class="image"></div>
+                        <div class="event-logo"></div>
+                        <h4> {{event.Nombre}} </h4>
+                        <p>{{event.Fecha | date: 'EEEE, MMMM d, y'}}</p>
+                        <p>{{event.Ciudad}}</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
