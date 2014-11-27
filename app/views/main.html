@@ -11,7 +11,7 @@
     <div class="row">
         <div ng-repeat="event in events" class="col-lg-3 col-md-4 col-sm-6">
             <div class="event-tile">
-                <a ng-href="event.SitioWeb">
+                <a target="_blank" ng-href="{{event.SitioWeb}}">
                     <div class="inner">
                         <div class="image">
                             <img ng-src="{{event.Photo1._url}}">
