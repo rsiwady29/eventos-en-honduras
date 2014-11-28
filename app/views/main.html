@@ -9,6 +9,10 @@
     </div>
 
     <div class="row">
+        <div class="col-12 no-events" ng-show="{{events.length == 0}}">
+            No events
+        </div>
+
         <div ng-repeat="event in events" class="col-lg-3 col-md-4 col-sm-6">
             <div class="event-tile">
                 <a target="_blank" ng-href="{{event.SitioWeb}}">

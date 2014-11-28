@@ -83,3 +83,7 @@ body {
 .inner h4{
     margin-top: 20px;
 }
+
+.no-events{
+    text-align: center;
+}
