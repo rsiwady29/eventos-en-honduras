@@ -1,15 +1,20 @@
 body {
     padding-top: 70px;
     background: #f7f9f9;
+    background: url("../images/bg.jpg");
+}
+
+body::after{
+
 }
 
 .title{
     text-align: center;
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 .navbar{
-    background: #f0f3f4;
+    background-color: rgba(251,251,251,0.8);
 }
 
 .main-row{
