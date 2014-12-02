@@ -1,3 +1,3 @@
-Eventos Tech en Honduras
+Eventos tech en Honduras
 =====
-Calendario De los eventos tecnologicos En Honduras
+Calendario de los eventos tecnologicos En Honduras
