@@ -9,7 +9,6 @@ angular.module('eventosEnHondurasApp')
             for(var i=0; i< results.length; i++){
                 $scope.events.push(results[i].attributes);
             }
-            console.log($scope.events);
             $scope.$apply();
         };
 
