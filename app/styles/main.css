@@ -92,3 +92,7 @@ body::after{
 .no-events{
     text-align: center;
 }
+
+.form-group{
+    margin-bottom: 15px;
+}
